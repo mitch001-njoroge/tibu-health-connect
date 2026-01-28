@@ -23,7 +23,8 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Reducing long journeys, saving lives, and making healthcare accessible in every county. 
+              Our offerings connect patients with suitable healthcare providers and caregivers, 
+              streamline the healthcare journey, and significantly reduce medical expenses. 
               Find verified doctors, clinics, and wellness tools right in your community.
             </p>
 
