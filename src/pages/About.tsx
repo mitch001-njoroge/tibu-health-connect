@@ -47,6 +47,34 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Target Market */}
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="bg-primary/5 border border-primary/20 p-6 rounded-xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Users className="h-5 w-5 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground">Primary Market</h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              Underserved populations in <span className="font-medium text-foreground">rural and semi-urban areas</span> who 
+              lack access to quality healthcare within their communities and often travel long distances for basic medical care.
+            </p>
+          </div>
+          <div className="bg-success/5 border border-success/20 p-6 rounded-xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-10 w-10 rounded-lg bg-success/10 flex items-center justify-center">
+                <Target className="h-5 w-5 text-success" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground">Secondary Market</h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              <span className="font-medium text-foreground">Urban populations</span> seeking convenient healthcare solutions 
+              who value time-saving digital tools and prefer streamlined access to verified healthcare providers.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* The Problem */}
