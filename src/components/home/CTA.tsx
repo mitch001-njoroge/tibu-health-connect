@@ -12,11 +12,12 @@ const CTA = () => {
           </div>
           
           <h2 className="text-3xl font-bold text-secondary md:text-4xl">
-            Join Kenya's Growing Health Network
+            Partner With Kenya's Growing Health Network
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Are you a doctor, clinic, or pharmacy? Partner with TIBU Health-Connect to reach more patients in underserved communities and grow your practice.
+            Are you a <span className="font-medium text-foreground">doctor, specialist, caregiver, or healthcare provider/pharmacy</span>? 
+            Partner with TIBU Health-Connect to reach more patients in underserved communities and urban areas—and grow your practice.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
