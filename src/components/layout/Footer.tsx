@@ -17,7 +17,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-secondary-foreground/80 leading-relaxed">
-              Connecting underserved patients to trusted healthcare near them. Making quality healthcare accessible in every county of Kenya.
+              Connecting underserved patients to trusted healthcare near them. Making quality healthcare accessible in
+              every county of Kenya.
             </p>
           </div>
 
@@ -25,11 +26,31 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-secondary-foreground/80">
-              <li><Link to="/about" className="hover:text-secondary-foreground transition-colors">About Us</Link></li>
-              <li><Link to="/products" className="hover:text-secondary-foreground transition-colors">Products & Services</Link></li>
-              <li><Link to="/market-research" className="hover:text-secondary-foreground transition-colors">Market Research</Link></li>
-              <li><Link to="/sales" className="hover:text-secondary-foreground transition-colors">Partnership</Link></li>
-              <li><Link to="/financials" className="hover:text-secondary-foreground transition-colors">Financials</Link></li>
+              <li>
+                <Link to="/about" className="hover:text-secondary-foreground transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/products" className="hover:text-secondary-foreground transition-colors">
+                  Products & Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/market-research" className="hover:text-secondary-foreground transition-colors">
+                  Market Research
+                </Link>
+              </li>
+              <li>
+                <Link to="/sales" className="hover:text-secondary-foreground transition-colors">
+                  Partnership
+                </Link>
+              </li>
+              <li>
+                <Link to="/financials" className="hover:text-secondary-foreground transition-colors">
+                  Financials
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -70,7 +91,7 @@ const Footer = () => {
             © 2025 TIBU Health-Connect Services. All rights reserved.
           </p>
           <p className="text-sm text-secondary-foreground/60 flex items-center gap-1">
-            Made with <Heart className="h-4 w-4 text-accent" /> for Kenya's Health
+            Made with care for Kenya's Health
           </p>
         </div>
       </div>
