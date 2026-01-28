@@ -9,7 +9,9 @@ import {
   MessageCircle,
   Activity,
   FileText,
-  ArrowRight
+  ArrowRight,
+  Heart,
+  Home
 } from "lucide-react";
 
 const Products = () => {
@@ -26,6 +28,54 @@ const Products = () => {
               A comprehensive suite of digital health tools designed to make quality 
               healthcare accessible to every Kenyan, wherever they are.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How Our Platform Works */}
+      <section className="py-16 md:py-24 bg-card border-b border-border">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold text-secondary mb-4">
+              How Our Platform Works
+            </h2>
+            <p className="text-muted-foreground">
+              Smart healthcare matching powered by your health needs and data.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+            {/* Patient-Physician Matching */}
+            <div className="relative bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 p-8 rounded-2xl">
+              <div className="absolute top-4 right-4 h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center">
+                <span className="text-primary font-bold text-sm">1</span>
+              </div>
+              <div className="h-14 w-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                <Heart className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-4">
+                Smart Patient-Physician Matching
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Our platform helps individuals with medical conditions connect with <span className="font-medium text-foreground">suitable physicians and healthcare facilities</span> within their reach—based on their specific health needs and data input. No more guesswork, just personalized care recommendations.
+              </p>
+            </div>
+
+            {/* Home-Based Care */}
+            <div className="relative bg-gradient-to-br from-success/5 to-success/10 border border-success/20 p-8 rounded-2xl">
+              <div className="absolute top-4 right-4 h-8 w-8 rounded-full bg-success/20 flex items-center justify-center">
+                <span className="text-success font-bold text-sm">2</span>
+              </div>
+              <div className="h-14 w-14 rounded-xl bg-success/10 flex items-center justify-center mb-6">
+                <Home className="h-7 w-7 text-success" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-4">
+                Home-Based Patient Care
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We also connect <span className="font-medium text-foreground">home-based patients with qualified caregivers</span> for medical attention and therapy services. Bringing compassionate, professional care directly to patients who need it most—right in the comfort of their homes.
+              </p>
+            </div>
           </div>
         </div>
       </section>
