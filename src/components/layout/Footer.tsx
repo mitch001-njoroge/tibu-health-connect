@@ -37,11 +37,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-secondary-foreground/80">
-              <li>Find Nearby Doctors</li>
-              <li>Clinic Search</li>
+              <li>Find Nearby Doctors/Caregivers</li>
+              <li>Specialist Search</li>
               <li>Digital Wellness Tools</li>
               <li>Home Health Analysis</li>
-              <li>Provider Network</li>
+              <li>HCPs Network</li>
             </ul>
           </div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
-                +254 700 000 000
+                0734 656 000
               </li>
             </ul>
           </div>
