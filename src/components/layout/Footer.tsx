@@ -39,8 +39,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-secondary-foreground/80">
               <li>Find Nearby Doctors/Caregivers</li>
               <li>Specialist Search</li>
+              <li>Emergency Ambulance</li>
               <li>Digital Wellness Tools</li>
-              <li>Home Health Analysis</li>
               <li>HCPs Network</li>
             </ul>
           </div>

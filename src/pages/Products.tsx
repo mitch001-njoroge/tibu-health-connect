@@ -11,7 +11,8 @@ import {
   FileText,
   ArrowRight,
   Heart,
-  Home
+  Home,
+  Siren
 } from "lucide-react";
 
 const Products = () => {
@@ -75,6 +76,59 @@ const Products = () => {
               <p className="text-muted-foreground leading-relaxed">
                 We also connect <span className="font-medium text-foreground">home-based patients with qualified caregivers</span> for medical attention and therapy services. Bringing compassionate, professional care directly to patients who need it most—right in the comfort of their homes.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Ambulance Services */}
+      <section className="py-16 md:py-24 bg-destructive/5 border-y border-destructive/20">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid gap-8 lg:grid-cols-2 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-destructive/10 text-destructive text-sm font-medium mb-4">
+                  <Siren className="h-4 w-4" />
+                  Emergency Services
+                </div>
+                <h2 className="text-3xl font-bold text-secondary mb-4">
+                  Ambulance Connectivity
+                </h2>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  We're connecting patients in <span className="font-medium text-foreground">informal sectors</span> with 
+                  emergency ambulance services when they need it most. Fast response times save lives.
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "Quick ambulance dispatch for emergencies",
+                    "Coverage in informal settlements",
+                    "Trained emergency responders",
+                    "Direct hospital coordination"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center gap-2 text-muted-foreground">
+                      <span className="h-5 w-5 rounded-full bg-destructive/20 flex items-center justify-center">
+                        <span className="h-2 w-2 rounded-full bg-destructive"></span>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-card p-8 rounded-2xl border border-destructive/20 text-center">
+                <div className="h-20 w-20 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
+                  <Siren className="h-10 w-10 text-destructive" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Emergency? Call Now</h3>
+                <a 
+                  href="tel:0734656000" 
+                  className="text-2xl font-bold text-destructive hover:underline"
+                >
+                  0734 656 000
+                </a>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Available 24/7 for emergency response
+                </p>
+              </div>
             </div>
           </div>
         </div>

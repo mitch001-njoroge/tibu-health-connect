@@ -1,4 +1,4 @@
-import { MapPin, Shield, Smartphone, Heart, Users, Clock } from "lucide-react";
+import { MapPin, Shield, Smartphone, Heart, Users, Clock, Siren } from "lucide-react";
 
 const features = [
   {
@@ -12,6 +12,12 @@ const features = [
     title: "Verified Providers",
     description: "Every healthcare provider is vetted and licensed, protecting you from brokers and fraudulent services.",
     color: "success"
+  },
+  {
+    icon: Siren,
+    title: "Emergency Ambulance",
+    description: "Quick ambulance connectivity for emergency cases, especially in informal sectors. Fast response saves lives.",
+    color: "destructive"
   },
   {
     icon: Smartphone,
@@ -30,12 +36,6 @@ const features = [
     title: "Community Health Network",
     description: "Join a network of health ambassadors working to improve healthcare in underserved areas.",
     color: "success"
-  },
-  {
-    icon: Clock,
-    title: "Quick Appointments",
-    description: "Book appointments online and reduce wait times. Get care when you need it.",
-    color: "accent"
   }
 ];
 
@@ -60,11 +60,13 @@ const Features = () => {
             >
               <div className={`h-12 w-12 rounded-lg flex items-center justify-center mb-4 ${
                 feature.color === 'primary' ? 'bg-primary/10' :
-                feature.color === 'success' ? 'bg-success/10' : 'bg-accent/10'
+                feature.color === 'success' ? 'bg-success/10' : 
+                feature.color === 'destructive' ? 'bg-destructive/10' : 'bg-accent/10'
               }`}>
                 <feature.icon className={`h-6 w-6 ${
                   feature.color === 'primary' ? 'text-primary' :
-                  feature.color === 'success' ? 'text-success' : 'text-accent'
+                  feature.color === 'success' ? 'text-success' : 
+                  feature.color === 'destructive' ? 'text-destructive' : 'text-accent'
                 }`} />
               </div>
               <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
