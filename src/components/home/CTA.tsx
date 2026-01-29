@@ -16,7 +16,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Are you a <span className="font-medium text-foreground">doctor, specialist, caregiver, or healthcare provider/pharmacy</span>? 
+            Are you a <span className="font-medium text-foreground">doctor, specialist, caregiver, or healthcare provider</span>? 
             Partner with TIBU Health-Connect to reach more patients in underserved communities and urban areas—and grow your practice.
           </p>
 
