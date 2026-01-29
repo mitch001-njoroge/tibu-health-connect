@@ -112,6 +112,9 @@ const Header = () => {
               <Button variant="outline" size="sm" asChild>
                 <Link to="/provider-auth">Join as Provider</Link>
               </Button>
+              <Button size="sm" asChild>
+                <Link to="/find-care">Find Healthcare</Link>
+              </Button>
               <Button size="sm">Find Healthcare</Button>
             </>
           )}
@@ -169,12 +172,16 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                  <Button variant="outline" size="sm" asChild>
                     <Link to="/provider-auth" onClick={() => setIsOpen(false)}>
                       Join as Provider
                     </Link>
                   </Button>
-                  <Button size="sm" className="flex-1">Find Healthcare</Button>
+                  <Button size="sm" asChild>
+                    <Link to="/find-care" onClick={() => setIsOpen(false)}>
+                      Find Healthcare
+                    </Link>
+                  </Button>
                 </>
               )}
             </div>
