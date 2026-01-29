@@ -18,7 +18,7 @@ const CTA = () => {
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Are you a <span className="font-medium text-foreground">doctor, specialist, caregiver, or healthcare provider</span>? 
-            Partner with TIBU Health-Connect to reach more patients in underserved communities and urban areas—and grow your practice.
+            Partner with ECONNECT-TIBU to reach more patients in underserved communities and urban areas—and grow your practice.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

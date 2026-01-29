@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src={tibuLogo} alt="TIBU" className="h-10 w-10 rounded-lg" />
+              <img src={tibuLogo} alt="ECONNECT-TIBU" className="h-10 w-10 rounded-lg" />
               <div>
-                <span className="text-lg font-bold">TIBU</span>
-                <p className="text-xs text-secondary-foreground/70">Health-Connect Services</p>
+                <span className="text-lg font-bold">ECONNECT-TIBU</span>
+                <p className="text-xs text-secondary-foreground/70">Healthcare Services</p>
               </div>
             </div>
             <p className="text-sm text-secondary-foreground/80 leading-relaxed">
@@ -76,7 +76,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
-                info@tibuhealthconnect.co.ke
+                info@econnect-tibu.co.ke
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
@@ -88,7 +88,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-secondary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-secondary-foreground/60">
-            © 2025 TIBU Health-Connect Services. All rights reserved.
+            © 2025 ECONNECT-TIBU Services. All rights reserved.
           </p>
           <p className="text-sm text-secondary-foreground/60 flex items-center gap-1">
             Made with care for Kenya's Health

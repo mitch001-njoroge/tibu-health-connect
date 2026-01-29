@@ -20,10 +20,10 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur-md border-b border-border shadow-soft">
       <div className="container flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <img src={tibuLogo} alt="TIBU Health-Connect" className="h-10 w-10 md:h-12 md:w-12 rounded-lg object-contain" />
+          <img src={tibuLogo} alt="ECONNECT-TIBU" className="h-10 w-10 md:h-12 md:w-12 rounded-lg object-contain" />
           <div className="flex flex-col">
-            <span className="text-lg font-bold text-secondary md:text-xl">TIBU</span>
-            <span className="text-xs text-muted-foreground -mt-1">Health-Connect</span>
+            <span className="text-lg font-bold text-secondary md:text-xl">ECONNECT</span>
+            <span className="text-xs text-muted-foreground -mt-1">TIBU</span>
           </div>
         </Link>
 

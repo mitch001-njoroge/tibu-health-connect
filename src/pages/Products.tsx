@@ -268,7 +268,7 @@ const Products = () => {
                 <Smartphone className="h-24 w-24 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Mobile-First Design</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Access TIBU Health-Connect on any device. Our platform is optimized for 
+                  Access ECONNECT-TIBU on any device. Our platform is optimized for 
                   mobile use, even on low-bandwidth connections.
                 </p>
                 <Button className="group">

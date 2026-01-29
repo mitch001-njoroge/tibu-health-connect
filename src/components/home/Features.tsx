@@ -45,7 +45,7 @@ const Features = () => {
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-secondary mb-4 md:text-4xl">
-            Why Choose TIBU Health-Connect?
+            Why Choose ECONNECT-TIBU?
           </h2>
           <p className="text-muted-foreground">
             We're building a healthier Kenya by connecting patients with quality care in their communities.
