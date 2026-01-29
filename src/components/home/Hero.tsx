@@ -77,9 +77,9 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground text-sm">
-                    Find fast appointments with verified doctors, specialists and caregivers
+                    Find Fast Appointments with Verified Doctors,Specialists and Caregivers
                   </p>
-                  <p className="text-xs text-muted-foreground"> within your reach with ease of our digital platform.</p>
+                  <p className="text-xs text-muted-foreground"> Within your Reach with ease of our Digital Platform.</p>
                 </div>
               </div>
             </div>
