@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MapPin, Search, Building2, Stethoscope, Pill } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { MapPin, Search, Building2, Stethoscope, Pill, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -16,12 +17,15 @@ const counties = [
 ];
 
 const CountySelector = () => {
+  const navigate = useNavigate();
   const [selectedCounty, setSelectedCounty] = useState<string>("");
   const [searchResults, setSearchResults] = useState<boolean>(false);
 
   const handleSearch = () => {
     if (selectedCounty) {
-      setSearchResults(true);
+      navigate(`/find-care?county=${encodeURIComponent(selectedCounty)}`);
+    } else {
+      navigate("/find-care");
     }
   };
 
@@ -106,7 +110,13 @@ const CountySelector = () => {
               </div>
             </div>
             <div className="text-center mt-8">
-              <Button variant="outline">View All Providers in {selectedCounty}</Button>
+              <Button 
+                variant="outline" 
+                onClick={() => navigate(`/find-care?county=${encodeURIComponent(selectedCounty)}`)}
+              >
+                View All Providers in {selectedCounty}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         )}

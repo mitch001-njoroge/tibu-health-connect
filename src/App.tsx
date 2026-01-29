@@ -11,6 +11,7 @@ import Sales from "./pages/Sales";
 import Financials from "./pages/Financials";
 import ProviderAuth from "./pages/ProviderAuth";
 import ProviderDashboard from "./pages/ProviderDashboard";
+import FindCare from "./pages/FindCare";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/financials" element={<Financials />} />
           <Route path="/provider-auth" element={<ProviderAuth />} />
           <Route path="/provider-dashboard" element={<ProviderDashboard />} />
+          <Route path="/find-care" element={<FindCare />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
