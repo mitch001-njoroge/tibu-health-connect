@@ -1,7 +1,10 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Menu, X, LogOut, LayoutDashboard } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { supabase } from "@/integrations/supabase/client";
+import { User } from "@supabase/supabase-js";
+import { toast } from "@/hooks/use-toast";
 import tibuLogo from "@/assets/tibu-logo.jpg";
 
 const navLinks = [
@@ -14,7 +17,48 @@ const navLinks = [
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Set up auth state listener FIRST
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        setUser(session?.user ?? null);
+      }
+    );
+
+    // THEN check for existing session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleLogout = async () => {
+    setIsLoading(true);
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) throw error;
+      
+      toast({
+        title: "Signed out",
+        description: "You have been successfully signed out.",
+      });
+      navigate("/provider-auth");
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message || "Failed to sign out",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur-md border-b border-border shadow-soft">
@@ -45,8 +89,32 @@ const Header = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="outline" size="sm">Join as Provider</Button>
-          <Button size="sm">Find Healthcare</Button>
+          {user ? (
+            <>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/provider-dashboard">
+                  <LayoutDashboard className="h-4 w-4 mr-2" />
+                  Dashboard
+                </Link>
+              </Button>
+              <Button 
+                size="sm" 
+                variant="ghost" 
+                onClick={handleLogout} 
+                disabled={isLoading}
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                {isLoading ? "Signing out..." : "Logout"}
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/provider-auth">Join as Provider</Link>
+              </Button>
+              <Button size="sm">Find Healthcare</Button>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu Button */}
@@ -77,8 +145,38 @@ const Header = () => {
               </Link>
             ))}
             <div className="flex gap-3 pt-4 mt-2 border-t border-border">
-              <Button variant="outline" size="sm" className="flex-1">Join as Provider</Button>
-              <Button size="sm" className="flex-1">Find Healthcare</Button>
+              {user ? (
+                <>
+                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                    <Link to="/provider-dashboard" onClick={() => setIsOpen(false)}>
+                      <LayoutDashboard className="h-4 w-4 mr-2" />
+                      Dashboard
+                    </Link>
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    variant="ghost" 
+                    className="flex-1"
+                    onClick={() => {
+                      setIsOpen(false);
+                      handleLogout();
+                    }} 
+                    disabled={isLoading}
+                  >
+                    <LogOut className="h-4 w-4 mr-2" />
+                    Logout
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                    <Link to="/provider-auth" onClick={() => setIsOpen(false)}>
+                      Join as Provider
+                    </Link>
+                  </Button>
+                  <Button size="sm" className="flex-1">Find Healthcare</Button>
+                </>
+              )}
             </div>
           </nav>
         </div>
