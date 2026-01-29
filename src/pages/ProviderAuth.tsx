@@ -373,19 +373,18 @@ const ProviderAuth = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Full Name *</FormLabel>
-                          <FormControl>
-                            <div className="relative">
-                              <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
-                              <Input 
-                                value={field.value ?? ""} 
-                                onChange={field.onChange}
-                                onBlur={field.onBlur}
-                                name={field.name}
-                                placeholder="Dr. Jane Doe" 
-                                className="pl-10" 
+                          <div className="relative">
+                            <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
+                            <FormControl>
+                              <Input
+                                type="text"
+                                placeholder="Dr. Jane Doe"
+                                className="pl-10"
+                                {...field}
+                                value={field.value ?? ""}
                               />
-                            </div>
-                          </FormControl>
+                            </FormControl>
+                          </div>
                           <FormMessage />
                         </FormItem>
                       )}
@@ -397,19 +396,20 @@ const ProviderAuth = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
-                          <FormControl>
-                            <div className="relative">
-                              <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
-                              <Input 
-                                value={field.value ?? ""} 
-                                onChange={field.onChange}
-                                onBlur={field.onBlur}
-                                name={field.name}
-                                placeholder="0712 345 678" 
-                                className="pl-10" 
+                          <div className="relative">
+                            <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
+                            <FormControl>
+                              <Input
+                                type="tel"
+                                inputMode="tel"
+                                autoComplete="tel"
+                                placeholder="0712 345 678"
+                                className="pl-10"
+                                {...field}
+                                value={field.value ?? ""}
                               />
-                            </div>
-                          </FormControl>
+                            </FormControl>
+                          </div>
                           <FormMessage />
                         </FormItem>
                       )}
