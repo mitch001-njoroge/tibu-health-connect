@@ -14,7 +14,60 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      providers: {
+        Row: {
+          bio: string | null
+          county: string
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          license_number: string | null
+          location: string
+          phone: string
+          provider_type: Database["public"]["Enums"]["provider_type"]
+          specialty: string | null
+          status: Database["public"]["Enums"]["provider_status"]
+          updated_at: string
+          user_id: string
+          years_of_experience: number | null
+        }
+        Insert: {
+          bio?: string | null
+          county: string
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          license_number?: string | null
+          location: string
+          phone: string
+          provider_type: Database["public"]["Enums"]["provider_type"]
+          specialty?: string | null
+          status?: Database["public"]["Enums"]["provider_status"]
+          updated_at?: string
+          user_id: string
+          years_of_experience?: number | null
+        }
+        Update: {
+          bio?: string | null
+          county?: string
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          license_number?: string | null
+          location?: string
+          phone?: string
+          provider_type?: Database["public"]["Enums"]["provider_type"]
+          specialty?: string | null
+          status?: Database["public"]["Enums"]["provider_status"]
+          updated_at?: string
+          user_id?: string
+          years_of_experience?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +76,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      provider_status: "pending" | "approved" | "rejected"
+      provider_type: "doctor" | "specialist" | "caregiver" | "clinic" | "other"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +204,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      provider_status: ["pending", "approved", "rejected"],
+      provider_type: ["doctor", "specialist", "caregiver", "clinic", "other"],
+    },
   },
 } as const
