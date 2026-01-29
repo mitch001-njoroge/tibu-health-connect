@@ -211,7 +211,7 @@ const Financials = () => {
               and investment opportunities.
             </p>
             <p className="text-sm text-muted-foreground">
-              Email: invest@tibuhealthconnect.co.ke
+              Email: invest@econnect-tibu.co.ke
             </p>
           </div>
         </div>

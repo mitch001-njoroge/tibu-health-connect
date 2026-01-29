@@ -22,7 +22,7 @@ const Sales = () => {
               Sales & Marketing Strategy
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our multi-channel approach to growing the TIBU Health-Connect network 
+              Our multi-channel approach to growing the ECONNECT-TIBU network 
               and reaching underserved communities across Kenya.
             </p>
           </div>

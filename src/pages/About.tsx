@@ -9,7 +9,7 @@ const About = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold text-secondary mb-6 md:text-5xl">
-              About TIBU Health-Connect
+              About ECONNECT-TIBU
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We're on a mission to transform healthcare access in Kenya by connecting 
