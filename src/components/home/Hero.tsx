@@ -26,9 +26,9 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Our offerings connect patients with suitable healthcare providers and caregivers, streamline the
-              healthcare journey, and significantly reduce medical expenses. Find verified doctors, clinics, and
-              wellness tools right in your community.
+              Our offerings connect patients with Ideal healthcare providers and caregivers, streamline the healthcare
+              journey, and significantly reduce medical expenses. Find verified doctors, clinics, and wellness tools
+              right in your community.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
