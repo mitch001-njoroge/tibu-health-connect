@@ -8,9 +8,8 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Products & Services", path: "/products" },
-  { name: "Market Research", path: "/market-research" },
-  { name: "Sales & Marketing", path: "/sales" },
-  { name: "Financials", path: "/financials" },
+  { name: "Our Businesses", path: "/market-research" },
+  { name: "Our Insights", path: "/sales" },
 ];
 
 const Header = () => {
