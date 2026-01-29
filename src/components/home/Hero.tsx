@@ -16,16 +16,19 @@ const Hero = () => {
               </span>
               Now serving 47 counties in Kenya
             </div>
-            
+
             <h1 className="text-4xl font-bold tracking-tight text-secondary sm:text-5xl lg:text-6xl">
               Connecting Underserved Patients to{" "}
-              <span className="bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Trusted Healthcare</span> Near Them
+              <span className="bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">
+                Trusted Healthcare
+              </span>{" "}
+              Near Them
             </h1>
-            
+
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Our offerings connect patients with suitable healthcare providers and caregivers, 
-              streamline the healthcare journey, and significantly reduce medical expenses. 
-              Find verified doctors, clinics, and wellness tools right in your community.
+              Our offerings connect patients with suitable healthcare providers and caregivers, streamline the
+              healthcare journey, and significantly reduce medical expenses. Find verified doctors, clinics, and
+              wellness tools right in your community.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -59,9 +62,9 @@ const Hero = () => {
           {/* Image */}
           <div className="relative lg:order-last">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
-              <img 
-                src={heroImage} 
-                alt="Doctor consulting with patient using digital tools" 
+              <img
+                src={heroImage}
+                alt="Doctor consulting with patient using digital tools"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent"></div>
@@ -73,8 +76,10 @@ const Hero = () => {
                   <span className="text-success text-lg">✓</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm">Verified Providers</p>
-                  <p className="text-xs text-muted-foreground">Trusted & Licensed</p>
+                  <p className="font-semibold text-foreground text-sm">
+                    Find fast appointments with verified doctors, specialists and caregivers
+                  </p>
+                  <p className="text-xs text-muted-foreground"> within your reach with ease of our digital platform.</p>
                 </div>
               </div>
             </div>
