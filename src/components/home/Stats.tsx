@@ -1,4 +1,5 @@
 import { TrendingUp, Heart, MapPin, Users } from "lucide-react";
+import StatCard from "./StatCard";
 
 const stats = [
   {
@@ -42,17 +43,13 @@ const Stats = () => {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => (
-            <div 
+            <StatCard
               key={index}
-              className="text-center p-6 rounded-xl bg-primary-foreground/10 backdrop-blur-sm"
-            >
-              <div className="h-12 w-12 rounded-full bg-primary-foreground/20 flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="h-6 w-6" />
-              </div>
-              <p className="text-4xl font-bold mb-2">{stat.value}</p>
-              <p className="font-medium mb-1">{stat.label}</p>
-              <p className="text-sm text-primary-foreground/70">{stat.description}</p>
-            </div>
+              icon={stat.icon}
+              value={stat.value}
+              label={stat.label}
+              description={stat.description}
+            />
           ))}
         </div>
       </div>
