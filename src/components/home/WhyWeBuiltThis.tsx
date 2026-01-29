@@ -3,20 +3,20 @@ import { AlertTriangle, Clock, UserX, Heart, Sparkles } from "lucide-react";
 const painPoints = [
   {
     icon: Clock,
-    text: "Hard to get fast appointments with primary care physicians"
+    text: "Hard to get fast appointments with primary care physicians",
   },
   {
     icon: AlertTriangle,
-    text: "Even harder to access specialists when you need them most"
+    text: "Even harder to access specialists when you need them most",
   },
   {
     icon: Clock,
-    text: "Long waiting times and endless queues at facilities"
+    text: "Long waiting times and endless queues at facilities",
   },
   {
     icon: UserX,
-    text: "Brokers and fraudulent services exploiting vulnerable patients"
-  }
+    text: "Brokers and fraudulent services exploiting vulnerable patients",
+  },
 ];
 
 const WhyWeBuiltThis = () => {
@@ -30,21 +30,16 @@ const WhyWeBuiltThis = () => {
               <AlertTriangle className="h-4 w-4" />
               The Reality of Healthcare in Kenya
             </div>
-            <h2 className="text-3xl font-bold text-secondary md:text-4xl mb-4">
-              Why We Built This Platform
-            </h2>
+            <h2 className="text-3xl font-bold text-secondary md:text-4xl mb-4">Why We Built This Platform</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Healthcare in Kenya is quite frustrating. We asked ourselves: can we do better?
+              Healthcare in Kenya is quite frustrating. Our why Question?
             </p>
           </div>
 
           {/* Pain Points */}
           <div className="grid gap-4 sm:grid-cols-2 mb-10">
             {painPoints.map((point, index) => (
-              <div 
-                key={index} 
-                className="flex items-start gap-4 p-5 rounded-xl bg-muted border border-border"
-              >
+              <div key={index} className="flex items-start gap-4 p-5 rounded-xl bg-muted border border-border">
                 <div className="h-10 w-10 rounded-lg bg-destructive/10 flex items-center justify-center flex-shrink-0">
                   <point.icon className="h-5 w-5 text-destructive" />
                 </div>
@@ -59,12 +54,10 @@ const WhyWeBuiltThis = () => {
               <Sparkles className="h-4 w-4" />
               Our Answer
             </div>
-            <h3 className="text-2xl font-bold text-secondary mb-4">
-              Patients Deserve Better
-            </h3>
+            <h3 className="text-2xl font-bold text-secondary mb-4">Patients Deserve Better</h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed">
-              That's why we're building an innovative platform that puts patients first—making it easy to find trusted doctors, 
-              book appointments quickly, and access quality healthcare without the frustration.
+              That's why we're building an innovative platform that puts patients first—making it easy to find trusted
+              doctors, book appointments quickly, and access quality healthcare without the frustration.
             </p>
             <div className="flex items-center justify-center gap-2 text-primary font-medium">
               <Heart className="h-5 w-5" />
