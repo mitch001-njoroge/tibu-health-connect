@@ -108,9 +108,9 @@ const ProviderAuth = () => {
     if (existingProvider) {
       toast({
         title: "Welcome back!",
-        description: "You're already registered as a provider.",
+        description: "Redirecting to your dashboard.",
       });
-      navigate("/");
+      navigate("/provider-dashboard");
     } else {
       setStep("profile");
     }
@@ -200,9 +200,9 @@ const ProviderAuth = () => {
 
       toast({
         title: "Registration Complete!",
-        description: "Your provider profile has been submitted for review.",
+        description: "Redirecting to your dashboard.",
       });
-      navigate("/");
+      navigate("/provider-dashboard");
     } catch (error: any) {
       toast({
         title: "Error",
