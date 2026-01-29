@@ -26,9 +26,12 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Our offerings connect patients with Ideal healthcare providers and caregivers, streamline the healthcare
-              journey, and significantly reduce medical expenses. Find verified doctors, clinics, and wellness tools
-              right in your community.
+              ECONNECT-TIBU services is a digital technology platform providing health care services solutions. This
+              platform connects individual with healthcare needs to ideal and licensed doctors/specialists, homebased
+              patients with caregivers and ambulances, linking our clients with healthcare providers within the reach
+              for fast appointments. Our mission is to streamline the healthcare journey and significantly reduce
+              medical expenses our customers This integrated platform of services enables to fulfill its vision to
+              digitilize healthcare accessibility for a healthier tomorrow.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
