@@ -373,12 +373,19 @@ const ProviderAuth = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Full Name *</FormLabel>
-                          <div className="relative">
-                            <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10" />
-                            <FormControl>
-                              <Input {...field} placeholder="Dr. Jane Doe" className="pl-10" />
-                            </FormControl>
-                          </div>
+                          <FormControl>
+                            <div className="relative">
+                              <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
+                              <Input 
+                                value={field.value ?? ""} 
+                                onChange={field.onChange}
+                                onBlur={field.onBlur}
+                                name={field.name}
+                                placeholder="Dr. Jane Doe" 
+                                className="pl-10" 
+                              />
+                            </div>
+                          </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
@@ -390,12 +397,19 @@ const ProviderAuth = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
-                          <div className="relative">
-                            <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10" />
-                            <FormControl>
-                              <Input {...field} placeholder="0712 345 678" className="pl-10" />
-                            </FormControl>
-                          </div>
+                          <FormControl>
+                            <div className="relative">
+                              <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
+                              <Input 
+                                value={field.value ?? ""} 
+                                onChange={field.onChange}
+                                onBlur={field.onBlur}
+                                name={field.name}
+                                placeholder="0712 345 678" 
+                                className="pl-10" 
+                              />
+                            </div>
+                          </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
@@ -509,12 +523,19 @@ const ProviderAuth = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Location/Address *</FormLabel>
-                          <div className="relative">
-                            <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10" />
-                            <FormControl>
-                              <Input {...field} placeholder="e.g., Westlands, Nairobi" className="pl-10" />
-                            </FormControl>
-                          </div>
+                          <FormControl>
+                            <div className="relative">
+                              <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground z-10 pointer-events-none" />
+                              <Input 
+                                value={field.value ?? ""} 
+                                onChange={field.onChange}
+                                onBlur={field.onBlur}
+                                name={field.name}
+                                placeholder="e.g., Westlands, Nairobi" 
+                                className="pl-10" 
+                              />
+                            </div>
+                          </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
