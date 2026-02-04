@@ -115,7 +115,6 @@ const Header = () => {
               <Button size="sm" asChild>
                 <Link to="/find-care">Find Healthcare</Link>
               </Button>
-              <Button size="sm">Find Healthcare</Button>
             </>
           )}
         </div>
