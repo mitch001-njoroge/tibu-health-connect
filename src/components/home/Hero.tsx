@@ -30,7 +30,7 @@ const Hero = () => {
               platform connects individual with healthcare needs to ideal and licensed doctors/specialists, homebased
               patients with caregivers and ambulances, linking our clients with healthcare providers within the reach
               for fast appointments. Our mission is to streamline the healthcare journey and significantly reduce
-              medical expenses our customers This integrated platform of services enables to fulfill its vision to
+              medical expenses our customers. This integrated platform of services enables to fulfill its vision to
               digitilize healthcare accessibility for a healthier tomorrow.
             </p>
 
