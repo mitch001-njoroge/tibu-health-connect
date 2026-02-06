@@ -38,19 +38,15 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/market-research" className="hover:text-secondary-foreground transition-colors">
-                  Market Research
+                  Our Businesses
                 </Link>
               </li>
               <li>
                 <Link to="/sales" className="hover:text-secondary-foreground transition-colors">
-                  Partnership
+                  Our Insights
                 </Link>
               </li>
-              <li>
-                <Link to="/financials" className="hover:text-secondary-foreground transition-colors">
-                  Financials
-                </Link>
-              </li>
+              <li></li>
             </ul>
           </div>
 
@@ -87,9 +83,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-secondary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-secondary-foreground/60">
-            © 2025 ECONNECT-TIBU Services. All rights reserved.
-          </p>
+          <p className="text-sm text-secondary-foreground/60">© 2025 ECONNECT-TIBU Services. All rights reserved.</p>
           <p className="text-sm text-secondary-foreground/60 flex items-center gap-1">
             Made with care for Kenya's Health
           </p>
