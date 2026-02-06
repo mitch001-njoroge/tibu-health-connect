@@ -4,7 +4,7 @@ import StatCard from "./StatCard";
 const stats = [
   {
     icon: MapPin,
-    value: "60%",
+    value: "5km",
     label: "Reduction in travel distance",
     description: "Patients now access care within 10km"
   },
